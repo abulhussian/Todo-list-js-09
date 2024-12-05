@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title> Todo app</title>
+</head>
+
+<body class="body">
+  <!-- bg-images -->
+
+  <div class=" w-screen flex flex-col">
+    <div class="imgaes w-screen">
+      <img src="./images/bg-desktop-dark.jpg" alt="bg-desktop-dark"
+        class="bg-desktop-dark absolute -z-10 md:block hidden w-full">
+      <img src="./images/bg-mobile-dark.jpg" alt="bg-mobile-dark"
+        class="bg-mobile-dark absolute -z-10 block md:hidden w-full">
+      <img src="./images/bg-desktop-light.jpg" alt="bg-desktop-light"
+        class="bg-desktop-light absolute -z-10 hidden md:block w-full">
+      <img src="./images/bg-mobile-light.jpg" alt="bg-mobile-light"
+        class="bg-mobile-light absolute  -z-10 w-full md:hidden block">
+    </div>
+    <div class="bottom-section  md:mx-auto p-5  ">
+      <div class="title flex flex-row justify-between  items-center mt-10 md:mt-20 ">
+        <!-- title -->
+        <h1 class="tracking-widest font-semibold text-xl md:text-3xl  text-white">T O D O</h1>
+        <!-- image sun -->
+        <img src="./images/icon-sun.svg" alt="icon-sun" class="w-5 h-5 md:w-8 md:h-8 hidden img-sun">
+        <img src="./images/icon-moon.svg" alt="icon-sun" class="w-5 h-5 md:w-8 md:h-8 img-moon">
+      </div>
+      <div class=" mt-5 relative ">
+        <!-- create todo input -->
+        <input type="text" class="input-box w-full px-14 py-2 border-none lightInput  rounded-md "
+          placeholder="Create a new todo ">
+        <!-- circle and tick -->
+        <div
+          class="circle-first w-5 h-5 rounded-full absolute top-2 left-5 border border-darkGrayishBlue hover:bg-bggradient flex justify-center items-center">
+          <img src="./images/icon-check.svg" alt="icon-check" class="w-4 h-4 hidden">
+        </div>
+      </div>
+      <ul class="input-bar mt-3 relative   flex flex-col ">
+        <!-- custom input -->
+        <div class="tasks  lightInput flex flex-col "></div>
+      </ul>
+      <!-- mobile links -->
+      <div class="mobile-links  flex flex-row justify-between lightInput p-4  md:p-0  md:hidden ">
+        <!-- link1 -->
+        <p class="text-md text-darkGrayishBlue"> <span class="items-left-mobile">0</span> Items left</p>
+        <!-- link 2 -->
+        <p class="text-md clear-completed-mobile text-darkGrayishBlue">clear Completed</p>
+      </div>
+      <!-- desktop links -->
+      <footer class=" desktop-link lightInput flex flex-row px-10  py-3 mt-10 rounded-lg justify-evenly md:gap-5 ">
+        <!-- link1 -->
+        <p class=" text-sm text-darkGrayishBlue mr-10 md:block hidden font-semibold hover:text-brightBlue">
+          <span class="items-left">0</span> Items left
+        </p>
+        <!-- link 2 -->
+        <p href="" class="All-tasks text-darkGrayishBlue  font-semibold hover:text-brightBlue">All</p>
+        <!-- link 3 -->
+        <p class="Active-task text-darkGrayishBlue  font-semibold hover:text-brightBlue">Active</p>
+        <!-- link 4 -->
+        <p class="completed text-darkGrayishBlue  font-semibold hover:text-brightBlue">Completed</p>
+        <!-- link 5 -->
+        <p href=""
+          class="clear-completed text-sm text-darkGrayishBlue ml-10 md:block hidden font-semibold hover:text-brightBlue">
+          clear
+          Completed</p>
+
+      </footer>
+
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+
+
+</html>

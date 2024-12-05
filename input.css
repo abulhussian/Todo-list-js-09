@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.darkBg {
+  @apply bg-veryDarkDesaturatedBlue;
+}
+.darkInput {
+  @apply bg-veryDarkGrayishBlue;
+}
+.lightBg {
+  @apply bg-veryLightGray;
+}
+.lightInput {
+  @apply bg-white shadow-md;
+}
+.circleBg {
+  @apply bg-bggradient;
+}
+.active {
+  @apply line-through opacity-20;
+}
